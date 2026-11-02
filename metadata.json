@@ -1,0 +1,6 @@
+{
+  "name": "Premium Car Rentals",
+  "description": "Premium car rental and vehicle hire in Ghana. Rent with trust, drive with ease. Explore our fleet of saloon cars, SUVs, luxury vehicles, and buses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

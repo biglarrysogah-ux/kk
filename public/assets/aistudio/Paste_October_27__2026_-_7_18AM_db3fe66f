@@ -1,0 +1,1257 @@
+PREMIUM CAR RENTALS
+
+COMPLETE WEBSITE DEVELOPMENT, VALIDATION, AND NETLIFY DEPLOYMENT
+
+ROLE
+
+Act as a senior full-stack web developer, frontend engineer, UI/UX designer, software tester, and Netlify deployment specialist.
+
+Build a complete, professional, responsive website for a Ghanaian car rental business called Premium Car Rentals.
+
+This is a real website project, not a design mockup.
+
+You must generate the application code, implement the functionality, inspect the project, run the available tests, and prepare it for deployment.
+
+Do not stop after generating the homepage.
+
+Do not merely describe the code you would write.
+
+Implement the complete application.
+
+If you encounter an error, investigate and fix it before declaring the project complete.
+
+If a test cannot be run in your environment, explain that limitation honestly.
+
+Never claim that a test passed unless it was actually executed successfully.
+
+⸻
+
+PART 1: NON-NEGOTIABLE TECHNICAL REQUIREMENTS
+
+The most important objective is to create a website that can be built and deployed reliably on Netlify.
+
+Use the following architecture unless a documented technical limitation makes it unsuitable.
+
+Frontend:
+
+* React.
+* TypeScript.
+* Vite.
+* React Router.
+* Standard CSS or a lightweight styling solution.
+
+Hosting:
+
+* Netlify.
+
+Booking:
+
+* WhatsApp click-to-chat integration.
+* No database required.
+* No customer authentication required.
+* No paid API required for basic functionality.
+
+The website must work as a static frontend application.
+
+IMPORTANT:
+
+Do not introduce an unnecessary backend server.
+
+Do not require a Node.js server to remain running after deployment.
+
+Do not use server-side APIs to display the vehicle listings or operate the booking form.
+
+Do not use Gemini API calls at runtime.
+
+Do not require GEMINI_API_KEY for the finished website.
+
+Do not create unnecessary Firebase dependencies.
+
+Do not create functions or backend endpoints that are not needed.
+
+Do not include a fake API URL.
+
+Do not make any page dependent on an external backend being available.
+
+The entire website must be capable of being built into static HTML, CSS, JavaScript, and image assets suitable for Netlify static hosting.
+
+If Google AI Studio attempts to introduce a server-side dependency automatically, remove it if it is unnecessary and replace it with an appropriate static implementation.
+
+Before finishing, inspect package.json, the application entry point, the routing configuration, the asset paths, and the production build configuration.
+
+The website must not depend on temporary Google AI Studio preview URLs.
+
+⸻
+
+PART 2: BUSINESS INFORMATION
+
+Business name:
+
+Premium Car Rentals
+
+Business type:
+
+Car rental and vehicle hire.
+
+Primary market:
+
+Ghana.
+
+Local telephone number:
+
+0548009285
+
+International telephone number:
+
++233548009285
+
+Telephone link:
+
+tel:+233548009285
+
+WhatsApp link:
+
+https://wa.me/233548009285
+
+The same number must be used for calls and WhatsApp.
+
+Do not invent:
+
+* A physical business address.
+* An email address.
+* Social media profiles.
+* Rental prices.
+* Vehicle availability.
+* Company registration information.
+* Customer statistics.
+* Opening hours.
+
+Where pricing is needed, display:
+
+“Contact us for rental rates.”
+
+Where availability is needed, display:
+
+“Contact us to enquire about availability.”
+
+Do not promise that any particular vehicle is available.
+
+⸻
+
+PART 3: REQUIRED WEBSITE PAGES
+
+Create exactly three primary pages.
+
+PAGE 1:
+Homepage at /
+
+PAGE 2:
+Car listing page at /cars
+
+PAGE 3:
+Booking page at /booking
+
+All three routes must work independently.
+
+Visitors must be able to navigate directly to /cars and /booking.
+
+Refreshing either route must not produce a 404 error on Netlify.
+
+Use React Router or an equivalent reliable routing implementation.
+
+Configure the appropriate Netlify SPA fallback if required by the chosen architecture.
+
+Do not use buttons that only change the appearance of the page without performing their intended action.
+
+The navigation must contain:
+
+* Home
+* Our Cars
+* Book a Car
+
+The links must navigate to the correct dedicated routes.
+
+⸻
+
+PART 4: MANDATORY HOMEPAGE STRUCTURE
+
+The homepage must contain the actual content of the other two pages.
+
+This requirement is essential.
+
+Do not replace the car listing section with a button.
+
+Do not replace the booking form with a button.
+
+The homepage must display all of the following in this exact order:
+
+1. Navigation bar.
+2. Mercedes-Benz hero section.
+3. Business introduction.
+4. Complete vehicle listing section.
+5. Complete functional booking form.
+6. Customer review section.
+7. Footer.
+
+The homepage must display all 26 vehicle entries specified in Part 6.
+
+The homepage must display the same complete booking form that appears on /booking.
+
+The homepage vehicle cards must have working Book Now buttons.
+
+The homepage booking form must be capable of generating a WhatsApp booking message.
+
+The dedicated /cars page must independently display the complete vehicle inventory.
+
+The dedicated /booking page must independently display the complete booking form.
+
+Use shared components and a central vehicle data file so the three pages remain consistent.
+
+Do not duplicate the vehicle data in separate files.
+
+Do not allow the homepage and dedicated pages to show different vehicle inventories.
+
+⸻
+
+PART 5: HOMEPAGE DESIGN
+
+Create a premium automotive design using:
+
+* Deep charcoal.
+* White.
+* Light grey.
+* Rich automotive green.
+
+Suggested colours:
+
+#101312
+#181D1A
+#FFFFFF
+#F4F6F4
+#16803C
+#0D5F2B
+
+Use a modern sans-serif typeface.
+
+Use generous spacing, readable typography, clean layouts, subtle shadows, and consistent button styling.
+
+The design should communicate trust, reliability, convenience, and professionalism.
+
+Avoid a generic template appearance.
+
+HERO SECTION
+
+Create a large, visually impressive hero section with a high-quality image of a luxurious Mercedes-Benz.
+
+The Mercedes-Benz must be the primary visual focus.
+
+Use an appropriate background image, dark overlay, and readable white text.
+
+The image must be locally available in the project or otherwise reliably bundled with the application.
+
+Do not rely on an unstable external image URL.
+
+Do not claim an image has been generated unless the actual image file exists.
+
+The main heading must read EXACTLY:
+
+“rent with trust Drive with Ease”
+
+Preserve the exact wording and capitalization.
+
+Supporting text:
+
+“Discover the right vehicle for your journey. Explore our fleet and contact us directly to arrange your rental.”
+
+Include a green button labelled:
+
+“Explore Our Cars”
+
+This button must navigate to /cars.
+
+Include an optional secondary button labelled:
+
+“Book a Car”
+
+This button must navigate to /booking.
+
+These buttons must not replace the vehicle listing and booking form that appear farther down the homepage.
+
+BUSINESS INTRODUCTION
+
+Display a concise introduction to Premium Car Rentals.
+
+Explain that customers can explore the fleet and contact the business directly to arrange a rental.
+
+Do not make unsupported claims about the company’s services.
+
+⸻
+
+PART 6: COMPLETE VEHICLE INVENTORY
+
+Create a single central vehicle data file:
+
+src/data/vehicles.ts
+
+Every vehicle must have a unique ID.
+
+Preserve duplicate entries as separate records.
+
+The complete inventory contains exactly 26 entries.
+
+CATEGORY A: SALOON CARS
+
+Create these nine entries:
+
+1. Toyota Corolla
+2. Toyota Vitz
+3. Mazda Sedan
+4. Toyota Corolla
+5. Toyota Corolla 2026 Registered
+6. Toyota Corolla
+7. Honda Civic
+8. Toyota Vios 2026 Registered
+9. Kia Forte
+
+Preserve all repeated Toyota Corolla entries.
+
+Preserve the exact 2026 Registered labels.
+
+Do not invent model years for other entries.
+
+CATEGORY B: SUVs
+
+Create these twelve entries:
+
+1. Land Cruiser Prado
+2. Toyota RAV4
+3. Toyota Land Cruiser Prado Chauffeur Only
+4. Lexus LX570 Chauffeur Only
+5. Mitsubishi Outlander
+6. Toyota Land Cruiser Prado
+7. Honda CRV
+8. Toyota Highlander
+9. Toyota RAV4
+10. Haval SUV
+11. Lexus RX350
+12. Hyundai Santa Fe
+
+Preserve both Toyota RAV4 entries.
+
+Preserve both Toyota Land Cruiser Prado entries.
+
+The following entries must be marked Chauffeur Only:
+
+* Toyota Land Cruiser Prado Chauffeur Only.
+* Lexus LX570 Chauffeur Only.
+
+Do not present chauffeur-only vehicles as self-drive rentals.
+
+CATEGORY C: LUXURY VEHICLES
+
+Create these two entries:
+
+1. Mercedes Benz
+2. Mercedes Benz
+
+Preserve both entries separately.
+
+Do not invent different specifications to distinguish them.
+
+CATEGORY D: BUSES
+
+Create these three entries:
+
+1. Toyota 30 Seater Bus
+2. Hyundai Minibus
+3. Toyota Hiace
+
+Do not invent additional buses.
+
+INVENTORY VALIDATION
+
+The category counts must be:
+
+Saloon Cars: 9
+
+SUVs: 12
+
+Luxury Vehicles: 2
+
+Buses: 3
+
+Total: 26
+
+Implement a validation check that counts the records in the vehicle data file and reports an error if the total is not 26.
+
+Also verify that every vehicle has:
+
+* A unique ID.
+* A valid category.
+* A non-empty display name.
+* An image path.
+* A valid booking selection ID.
+
+Do not deduplicate repeated names.
+
+Use a unique ID for each record, even when two entries have the same display name.
+
+⸻
+
+PART 7: VEHICLE IMAGES
+
+Every vehicle listing must have a relevant automotive image.
+
+The Mercedes-Benz hero section must also have an appropriate luxury Mercedes-Benz image.
+
+Use real image assets bundled with the application.
+
+Prefer locally stored images.
+
+Use appropriately licensed images or generated images that are actually available as files.
+
+Suggested directory:
+
+public/images/hero-mercedes.jpg
+
+public/images/cars/
+
+Use descriptive filenames.
+
+For example:
+
+toyota-corolla-1.jpg
+toyota-corolla-2.jpg
+toyota-vitz.jpg
+toyota-rav4-1.jpg
+toyota-rav4-2.jpg
+lexus-lx570.jpg
+mercedes-benz-1.jpg
+mercedes-benz-2.jpg
+toyota-hiace.jpg
+
+These filenames are examples; the actual files must exist.
+
+Do not use an unrelated vehicle image.
+
+Do not use a BMW image as a Mercedes-Benz listing.
+
+Do not use a minivan image for a 30-seater bus.
+
+Do not reference image files that were never created or downloaded.
+
+Do not depend on images stored only in a temporary development environment.
+
+If an image cannot be obtained, use an attractive, clearly identifiable placeholder that does not falsely represent another vehicle.
+
+Implement an image fallback so a missing image does not break the page.
+
+Use consistent image aspect ratios.
+
+Use descriptive alt text.
+
+Optimize image file sizes.
+
+Lazy-load images below the initial viewport.
+
+Prioritize the hero image appropriately.
+
+⸻
+
+PART 8: VEHICLE LISTING PAGE
+
+Create the dedicated page at:
+
+/cars
+
+Display the complete vehicle inventory grouped into:
+
+1. Saloon Cars.
+2. SUVs.
+3. Luxury Vehicles.
+4. Buses.
+
+Use a professional responsive grid.
+
+Desktop:
+Three or four cards per row, depending on screen width.
+
+Tablet:
+Two cards per row.
+
+Mobile:
+One or two cards per row, depending on readability.
+
+Every vehicle card must display:
+
+* Vehicle image.
+* Vehicle name.
+* Category.
+* Relevant special badge.
+* Brief factual description.
+* Green Book Now button.
+
+Display the “2026 Registered” label where applicable.
+
+Display the “Chauffeur Only” label where applicable.
+
+Do not invent prices or vehicle specifications.
+
+For vehicles without a supplied price, use:
+
+“Contact us for rental rates.”
+
+Every Book Now button must navigate to /booking and automatically select the exact vehicle.
+
+For example:
+
+/booking?vehicle=saloon-corolla-001
+
+Use a unique vehicle ID rather than relying on the name alone.
+
+The correct vehicle must be selected even when multiple entries have the same name.
+
+The visitor must be allowed to change the selected vehicle.
+
+Do not remove duplicate entries.
+
+Do not display a card without a working booking button.
+
+⸻
+
+PART 9: BOOKING PAGE
+
+Create the dedicated page at:
+
+/booking
+
+Display the heading:
+
+“Book Your Car”
+
+Supporting text:
+
+“Complete the form below and continue to WhatsApp to send your rental enquiry directly to Premium Car Rentals.”
+
+Display the business telephone number.
+
+Include Call Now and Chat on WhatsApp links.
+
+Use the same booking form component on the homepage and the dedicated booking page.
+
+REQUIRED FIELD 1: FULL NAME
+
+Label:
+
+Full Name
+
+Input type:
+
+Text
+
+Required:
+
+Yes
+
+Reject empty or whitespace-only submissions.
+
+REQUIRED FIELD 2: PHONE NUMBER
+
+Label:
+
+Phone Number
+
+Input type:
+
+Telephone
+
+Required:
+
+Yes
+
+Accept valid Ghanaian and international phone-number formats.
+
+REQUIRED FIELD 3: WHATSAPP NUMBER
+
+Label:
+
+WhatsApp Number
+
+Input type:
+
+Telephone
+
+Required:
+
+Yes
+
+This must be a separate field from the general phone number.
+
+REQUIRED FIELD 4: VEHICLE
+
+Label:
+
+Select Your Vehicle
+
+Input type:
+
+Dropdown
+
+Required:
+
+Yes
+
+Populate the dropdown from the central vehicle inventory.
+
+All 26 records must be available.
+
+Preserve duplicates.
+
+Where names are duplicated, provide clear listing labels without inventing vehicle specifications.
+
+Preserve the chauffeur-only and 2026 Registered labels.
+
+When a customer selects Book Now on a vehicle card, automatically preselect that exact inventory record.
+
+Read the vehicle ID from the URL query parameter.
+
+If the parameter is invalid, display the normal form with no vehicle selected.
+
+Do not crash.
+
+REQUIRED FIELD 5: RENTAL DURATION
+
+Label:
+
+How Long Would You Like to Rent the Car?
+
+Input type:
+
+Dropdown
+
+Required:
+
+Yes
+
+Include:
+
+* 1 Day
+* 2 Days
+* 3 Days
+* 4 Days
+* 5 Days
+* 6 Days
+* 1 Week
+* 2 Weeks
+* 3 Weeks
+* 1 Month
+* More Than 1 Month
+* Other / Specify
+
+If Other / Specify is selected, display an additional text field.
+
+Require the additional field when that option is selected.
+
+OPTIONAL FIELD 6: PREFERRED PICKUP DATE
+
+Allow the visitor to choose a preferred pickup date.
+
+Do not make it mandatory.
+
+OPTIONAL FIELD 7: ADDITIONAL INFORMATION
+
+Provide a text area for optional information.
+
+Do not make it mandatory.
+
+FORM VALIDATION
+
+Validate every required field.
+
+Display understandable error messages.
+
+Prevent incomplete submissions.
+
+Preserve the form values when validation fails.
+
+Use accessible labels.
+
+Make the form usable on mobile.
+
+⸻
+
+PART 10: WHATSAPP BOOKING FUNCTIONALITY
+
+The booking form must prepare a WhatsApp message addressed to:
+
++233548009285
+
+Destination:
+
+https://wa.me/233548009285
+
+Construct the message dynamically using the customer’s actual form entries.
+
+Use a message structure similar to:
+
+Hello Premium Car Rentals,
+
+I would like to make a car rental enquiry.
+
+Full Name: [Entered full name]
+
+Phone Number: [Entered phone number]
+
+WhatsApp Number: [Entered WhatsApp number]
+
+Vehicle Requested: [Selected vehicle]
+
+Rental Duration: [Selected duration]
+
+Preferred Pickup Date: [Date, if supplied]
+
+Additional Information: [Additional information, if supplied]
+
+Please let me know the availability and rental price for my selected vehicle.
+
+Thank you.
+
+Do not hard-code the example values.
+
+Use JavaScript’s encodeURIComponent() to encode the complete message safely.
+
+Generate the destination URL programmatically.
+
+Example implementation approach:
+
+const message = createBookingMessage(formData);
+
+const whatsappUrl =
+https://wa.me/233548009285?text=${encodeURIComponent(message)};
+
+The actual implementation must define and validate formData and createBookingMessage correctly.
+
+Do not use this illustrative snippet as a substitute for the complete working form.
+
+After successful validation:
+
+1. Construct the message.
+2. Prepare the WhatsApp URL.
+3. Display an appropriate confirmation.
+4. Open the WhatsApp URL in a manner compatible with mobile and desktop browsers.
+
+The green submission button must read:
+
+“Send Booking via WhatsApp”
+
+Important:
+
+An ordinary WhatsApp click-to-chat link cannot silently deliver a message on behalf of the customer.
+
+It opens WhatsApp with the recipient and message prepared.
+
+The customer must confirm and send the message.
+
+Do not claim that the message has already been delivered.
+
+Do not require a WhatsApp API key.
+
+Do not require a database.
+
+If opening WhatsApp fails, display a usable fallback link.
+
+Ensure that the message contains the selected vehicle and all required form details.
+
+⸻
+
+PART 11: CALLING AND CONTACT
+
+Use these exact links throughout the website.
+
+Call:
+
+tel:+233548009285
+
+WhatsApp:
+
+https://wa.me/233548009285
+
+The displayed local number may be:
+
+0548009285
+
+Create a professional contact section.
+
+Add an optional floating WhatsApp button.
+
+The floating button must not obscure important content or interfere with the booking form.
+
+The number must remain consistent throughout the project.
+
+Do not invent additional contact details.
+
+⸻
+
+PART 12: SAMPLE CUSTOMER REVIEWS
+
+Every page must have a review section before the footer.
+
+The homepage must display its review section after the booking form.
+
+The /cars page must display its own review section.
+
+The /booking page must display its own review section.
+
+Use a shared review component.
+
+No authentic customer testimonials have been supplied.
+
+Therefore, use clearly labelled sample reviews.
+
+Every fictional review must be marked as sample content.
+
+Do not present fabricated testimonials as genuine customer experiences.
+
+Do not invent verified-customer badges or actual customer identities.
+
+Store review content in an easily editable data file.
+
+The business owner must be able to replace sample content with authentic reviews later.
+
+⸻
+
+PART 13: FOOTER
+
+Each page must end with a professional footer containing:
+
+* Premium Car Rentals.
+* Home link.
+* Our Cars link.
+* Book a Car link.
+* Call Now link.
+* WhatsApp link.
+* A brief closing statement.
+* Automatically updated copyright year.
+
+Do not invent an address, email address, or social media account.
+
+⸻
+
+PART 14: PROJECT FILE STRUCTURE
+
+Organize the application into clear, maintainable files.
+
+A suitable structure is:
+
+premium-car-rentals/
+package.json
+package-lock.json
+index.html
+vite.config.ts
+tsconfig.json
+netlify.toml
+README.md
+public/
+_redirects
+favicon.svg
+images/
+hero-mercedes.jpg
+cars/
+src/
+main.tsx
+App.tsx
+data/
+vehicles.ts
+reviews.ts
+components/
+Navbar.tsx
+Hero.tsx
+VehicleCard.tsx
+VehicleGrid.tsx
+BookingForm.tsx
+Reviews.tsx
+Footer.tsx
+WhatsAppButton.tsx
+pages/
+HomePage.tsx
+CarsPage.tsx
+BookingPage.tsx
+styles/
+global.css
+
+This is the intended architecture.
+
+Adjust filenames if needed, but preserve the separation between data, components, pages, styles, and static assets.
+
+Do not leave imports pointing to nonexistent files.
+
+Do not create a package-lock.json manually with fake package information.
+
+Generate it using the package manager when the environment allows.
+
+All required dependencies must be declared.
+
+Do not depend on packages that exist only in the development environment.
+
+⸻
+
+PART 15: NETLIFY CONFIGURATION
+
+Create a correct netlify.toml in the project root.
+
+For a standard Vite application, use:
+
+[build]
+command = “npm run build”
+publish = “dist”
+
+Create a public/_redirects file containing:
+
+/* /index.html 200
+
+Use this fallback only if appropriate for the SPA architecture.
+
+Verify that the redirect file is copied into the production output.
+
+Ensure direct navigation and refresh work on:
+
+/
+
+/cars
+
+/booking
+
+The build must not depend on Google AI Studio’s development server.
+
+Do not configure an unnecessary backend.
+
+Do not place secret API keys in netlify.toml.
+
+Do not require environment variables for the basic website.
+
+Do not reference development-only URLs.
+
+The final static build must contain all necessary assets.
+
+⸻
+
+PART 16: PACKAGE AND BUILD REQUIREMENTS
+
+Create a valid package.json.
+
+Use a stable, mutually compatible set of dependencies.
+
+Provide appropriate scripts for development, production builds, and previewing the production build.
+
+A typical Vite configuration may use:
+
+“dev”: “vite”
+
+“build”: “tsc -b && vite build”
+
+“preview”: “vite preview”
+
+Adjust the scripts to match the generated TypeScript configuration.
+
+Do not keep a build script that references missing configuration files.
+
+Do not suppress TypeScript errors merely to make the build appear successful.
+
+Fix genuine type errors and missing imports.
+
+Do not introduce unnecessary dependencies.
+
+The production build must create the dist directory.
+
+Verify that dist contains the entry HTML file, bundled JavaScript, CSS, and required assets.
+
+If the build fails, inspect the error and fix the underlying cause.
+
+Do not declare the project complete while a reproducible production build error remains unresolved.
+
+⸻
+
+PART 17: IMAGE AND ASSET VALIDATION
+
+Check every image reference.
+
+Confirm that each referenced local image file exists.
+
+Ensure that filenames match the actual assets, including capitalization.
+
+Ensure the hero image exists.
+
+Ensure vehicle images are included in the project.
+
+Do not use file paths that only work in the development preview.
+
+Use correct Vite-compatible asset paths.
+
+If an image cannot be obtained, use a deliberate fallback.
+
+Do not create hundreds of megabytes of unnecessary image assets.
+
+Optimize images without making them visibly poor quality.
+
+Verify the final build includes the assets.
+
+⸻
+
+PART 18: RESPONSIVE DESIGN AND ACCESSIBILITY
+
+Support desktop, tablet, and mobile layouts.
+
+Desktop:
+
+* Full navigation.
+* Large hero image.
+* Spacious vehicle grid.
+* Professional booking form.
+
+Tablet:
+
+* Responsive grid.
+* Readable typography.
+* Appropriate spacing.
+
+Mobile:
+
+* Compact navigation.
+* Properly cropped hero image.
+* Readable headline.
+* Comfortable form fields.
+* Easy-to-tap green buttons.
+* No horizontal overflow.
+* Floating WhatsApp button positioned safely.
+
+Implement:
+
+* Semantic HTML.
+* Accessible form labels.
+* Visible keyboard focus.
+* Descriptive image alt text.
+* Sufficient colour contrast.
+* Clear validation messages.
+* Reduced-motion support where appropriate.
+
+Do not make essential functionality dependent on hover effects.
+
+⸻
+
+PART 19: SEO
+
+Create appropriate page titles and descriptions.
+
+Homepage title:
+
+Premium Car Rentals | Rent with Trust, Drive with Ease
+
+Car listing title:
+
+Our Cars | Premium Car Rentals
+
+Booking page title:
+
+Book a Car | Premium Car Rentals
+
+Provide a viewport meta tag, favicon, descriptive headings, and useful image alt text.
+
+Do not add unsupported business information to structured data.
+
+⸻
+
+PART 20: REQUIRED AUTOMATED CHECKS
+
+Use the tools available in the development environment.
+
+Where practical, add lightweight automated tests for the most important application logic.
+
+Test the vehicle inventory.
+
+Expected total:
+
+Expected category totals:
+
+Saloon Cars: 9.
+
+SUVs: 12.
+
+Luxury Vehicles: 2.
+
+Buses: 3.
+
+Verify that all vehicle IDs are unique.
+
+Verify that duplicate display names remain separate.
+
+Verify that chauffeur-only and 2026 Registered labels are preserved.
+
+Verify that the WhatsApp message includes the required form fields.
+
+Verify that the WhatsApp destination is correct.
+
+Verify that URL encoding is applied.
+
+Verify that the booking form prevents invalid submissions.
+
+Verify that every Book Now button uses the correct vehicle ID.
+
+Run the production build.
+
+Run any configured tests.
+
+Correct the issues that are discovered.
+
+If browser testing is available, inspect all three routes.
+
+If automated browser testing is unavailable, do not pretend that it was performed.
+
+⸻
+
+PART 21: FINAL DEPLOYMENT CHECKLIST
+
+Before presenting the project as complete, inspect the following.
+
+APPLICATION:
+
+[ ] The homepage renders.
+
+[ ] The homepage contains the actual vehicle listing section.
+
+[ ] The homepage contains the actual booking form.
+
+[ ] The /cars route renders.
+
+[ ] The /booking route renders.
+
+[ ] The navigation links work.
+
+INVENTORY:
+
+[ ] Exactly 26 vehicle records exist.
+
+[ ] All category totals are correct.
+
+[ ] Repeated names have unique IDs.
+
+[ ] Special vehicle labels are correct.
+
+[ ] All cards have valid image references.
+
+BOOKING:
+
+[ ] All required fields are present.
+
+[ ] Required fields are validated.
+
+[ ] The correct vehicle is preselected.
+
+[ ] Rental duration works.
+
+[ ] WhatsApp message generation works.
+
+[ ] The destination is correct.
+
+[ ] Phone links work.
+
+[ ] WhatsApp contact links work.
+
+DEPLOYMENT:
+
+[ ] package.json exists.
+
+[ ] Required dependencies are declared.
+
+[ ] The build configuration is valid.
+
+[ ] netlify.toml exists.
+
+[ ] The SPA redirect configuration is correct if required.
+
+[ ] The production build succeeds.
+
+[ ] The dist directory contains the production site.
+
+[ ] The required assets are included.
+
+[ ] The application does not require an unnecessary backend.
+
+[ ] The application does not require GEMINI_API_KEY at runtime.
+
+[ ] The README contains deployment instructions.
+
+Do not claim that these checks passed without executing them.
+
+If a check fails, fix the problem and rerun the relevant check.
+
+If a check cannot be performed, identify it as unverified.
+
+⸻
+
+PART 22: README AND ZIP EXPORT INSTRUCTIONS
+
+Create a README.md containing:
+
+1. Project overview.
+2. Technology stack.
+3. Project structure.
+4. Instructions for installing dependencies.
+5. Instructions for running the development server.
+6. Instructions for running the production build.
+7. Instructions for previewing the production build.
+8. Instructions for downloading the project ZIP from Google AI Studio.
+9. Instructions for extracting the ZIP.
+10. Instructions for deploying through Netlify’s Git-based workflow.
+11. Instructions for manual deployment of the production output.
+12. Common deployment errors and their solutions.
+
+For a Vite project, document these typical local commands:
+
+npm install
+
+npm run build
+
+npm run preview
+
+The commands must correspond to the actual package.json scripts.
+
+Explain that npm run build must finish successfully before the production output can be considered ready.
+
+For manual deployment, explain that the dist folder is the finished static website output.
+
+For Git-based deployment, explain that Netlify must receive the source project with its package.json, build command, and publish directory correctly configured.
+
+Do not tell the user to upload the source ZIP as if it were automatically a finished static website.
+
+Do not assume the ZIP will contain a prebuilt dist directory unless you verify that it does.
+
+⸻
+
+PART 23: FINAL RESPONSE
+
+When the implementation is complete, provide a concise report containing:
+
+1. The pages created.
+2. The vehicle count and category totals.
+3. The booking functionality implemented.
+4. The deployment configuration files created.
+5. The production build result.
+6. The tests actually executed and their results.
+7. Any remaining unverified items.
+8. Exact instructions for downloading and deploying the project.
+
+Clearly distinguish between:
+
+* Code generated.
+* Build successfully completed.
+* Tests successfully executed.
+* Deployment configuration prepared.
+* Website actually deployed and verified.
+
+Do not claim that the website is live on Netlify unless it has actually been deployed and tested there.
+
+The final objective is a professional, functional, maintainable, static website that is ready for Netlify deployment.
+
+And also, I want you to use this images as reference
+
+BEGIN IMPLEMENTATION NOW.

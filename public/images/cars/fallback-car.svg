@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111111"/>
+      <stop offset="50%" stop-color="#1C1C1C"/>
+      <stop offset="100%" stop-color="#111111"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F58220" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#111111" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <ellipse cx="400" cy="280" rx="360" ry="140" fill="url(#glow)"/>
+  <g transform="translate(400, 240)" text-anchor="middle">
+    <!-- Stylized car silhouette -->
+    <path d="M-180 30 C-170 -10 -120 -30 -60 -40 L40 -40 C110 -40 150 -10 180 30 C190 45 190 60 170 65 L-170 65 C-190 60 -190 45 -180 30 Z" fill="#242424" stroke="#F58220" stroke-width="2"/>
+    <path d="M-100 -35 L-40 -80 L60 -80 L110 -35 Z" fill="#181818" stroke="#F58220" stroke-width="2"/>
+    <circle cx="-110" cy="65" r="28" fill="#111111" stroke="#F58220" stroke-width="3"/>
+    <circle cx="110" cy="65" r="28" fill="#111111" stroke="#F58220" stroke-width="3"/>
+    <text y="-110" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF" letter-spacing="1">Premium Vehicle</text>
+    <text y="125" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#F58220" letter-spacing="2">PREMIUM CAR RENTALS • GHANA</text>
+  </g>
+</svg>
